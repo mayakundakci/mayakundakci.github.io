@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Maya Kundakci
-url: https://mayakundakci.github.io/
-email: mkundakc@andrew.cmu.edu
+title: MM
+email:
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-github_username: mayakundakci
+twitter_username: username
+github_username: username
 minimal_mistakes_skin: contrast
 search: true
 
@@ -31,7 +31,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: America/New_York
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -58,21 +58,34 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name: Maya Kundakci
-  email: mkundakc@andrew.cmu.edu
-  avatar: /path-to-avatar.jpg 
+  name   : "First Lastname"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "My awesome biography constrained to a sentence or two goes here."
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
 
 footer:
   links:
-    - label: "Linkedin"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/maya-kundakci/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mayakundakci/"
+      url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/maya.kundakci"
+      url: "https://instagram.com/"
 
 defaults:
   # _posts
