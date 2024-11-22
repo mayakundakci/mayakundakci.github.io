@@ -59,7 +59,7 @@ plugins:
 author:
   name   : "Maya Kundakci"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Hi! I am Maya, a Mechanical Engineering student with a minor in Robotics at Carnegie Mellon University interested in ground systems & aerial vehicles!"
   links:
     - label: "Linkedin"
       icon: "fab fa-linkedin"
