@@ -4,8 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Professional — Maya Kundakci</title>
+  <meta name="description" content="Professional experience of Maya Kundakci — including Hitachi Rail RAMS internship and BMW Turkey technician experience." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🤖</text></svg>">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <nav>
     <div class="brand"><span class="dot"></span>Maya Kundakci</div>
@@ -20,23 +23,31 @@
 
   <main>
     <h1>Professional Experience</h1>
-    <h3>RAMS Intern — Hitachi Rail (Summer 2025)</h3>
-    <ul>
-      <li>Developed a SQL + React tool for FMECA and SHA worksheets.</li>
-      <li>Performed FMECA on WMATA 8k speed sensors and TWC components.</li>
-      <li>Explored AI-driven automation for safety documentation.</li>
-    </ul>
 
-    <h3>Mechanic / Technician — BMW Turkey (Summer 2023)</h3>
-    <ul>
-      <li>Conducted vehicle maintenance and diagnostics under senior supervision.</li>
-      <li>Gained hands-on experience with mechanical assembly and repair workflows.</li>
-    </ul>
+    <section>
+      <h3>RAMS Intern — Hitachi Rail (Summer 2025)</h3>
+      <ul>
+        <li>Developed a SQL + React tool for FMECA and SHA worksheets.</li>
+        <li>Performed FMECA on WMATA 8k speed sensors and TWC components.</li>
+        <li>Explored AI-driven automation for safety documentation.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Mechanic / Technician — BMW Turkey (Summer 2023)</h3>
+      <ul>
+        <li>Conducted vehicle maintenance and diagnostics under senior supervision.</li>
+        <li>Gained hands-on experience with mechanical assembly and repair workflows.</li>
+      </ul>
+    </section>
   </main>
 
   <footer>
     <p>© <span id="year"></span> Maya Kundakci</p>
   </footer>
-  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
