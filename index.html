@@ -1,121 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maya Kundakci | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#other">Other</a></li>
-      </ul>
-    </nav>
-  </header>
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-  <section id="about" class="landing">
-    <img src="your-photo.jpg" alt="Photo of Maya" class="profile-pic" />
-    <h1>Maya Kundakci</h1>
-    <p>Hi! I’m Maya — a creative web developer with a passion for clean, user-friendly design. Welcome to my portfolio!</p>
-  </section>
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: #0b0c0f;
+  color: #e8e9ee;
+  line-height: 1.6;
+}
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project-list">
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <div class="project-images">
-          <img src="project1-img1.jpg" alt="Project 1 image 1" />
-          <img src="project1-img2.jpg" alt="Project 1 image 2" />
-        </div>
-        <p>Description of the first project.</p>
-      </div>
+a {
+  color: #4dd0e1;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <div class="project-images">
-          <img src="project2-img1.jpg" alt="Project 2 image 1" />
-          <img src="project2-img2.jpg" alt="Project 2 image 2" />
-        </div>
-        <p>Description of the second project.</p>
-      </div>
+/* ---------- Layout ---------- */
+main {
+  padding: 80px 5%;
+  max-width: 900px;
+  margin: auto;
+}
 
-      <div class="project-card">
-        <h3>Project 3</h3>
-        <div class="project-images">
-          <img src="project3-img1.jpg" alt="Project 3 image 1" />
-          <img src="project3-img2.jpg" alt="Project 3 image 2" />
-        </div>
-        <p>Description of the third project.</p>
-      </div>
+h1, h2, h3 {
+  color: #ffffff;
+  margin-top: 0;
+}
+p {
+  color: #cfd2dc;
+}
 
-      <div class="project-card">
-        <h3>Project 4</h3>
-        <div class="project-images">
-          <img src="project4-img1.jpg" alt="Project 4 image 1" />
-          <img src="project4-img2.jpg" alt="Project 4 image 2" />
-        </div>
-        <p>Description of the fourth project.</p>
-      </div>
+ul {
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 8px;
+}
 
-      <div class="project-card">
-        <h3>Project 5</h3>
-        <div class="project-images">
-          <img src="project5-img1.jpg" alt="Project 5 image 1" />
-          <img src="project5-img2.jpg" alt="Project 5 image 2" />
-        </div>
-        <p>Description of the fifth project.</p>
-      </div>
-    </div>
-  </section>
+/* ---------- Navbar ---------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: #12141a;
+  border-bottom: 1px solid #232634;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-  <section id="other">
-    <h2>Other Work</h2>
-    <div class="other-list">
-      <div class="other-card">
-        <h3>Other 1</h3>
-        <div class="other-images">
-          <img src="other1-img1.jpg" alt="Other 1 image 1" />
-          <img src="other1-img2.jpg" alt="Other 1 image 2" />
-        </div>
-        <p>Description of the first other item.</p>
-      </div>
+.brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
-      <div class="other-card">
-        <h3>Other 2</h3>
-        <div class="other-images">
-          <img src="other2-img1.jpg" alt="Other 2 image 1" />
-          <img src="other2-img2.jpg" alt="Other 2 image 2" />
-        </div>
-        <p>Description of the second other item.</p>
-      </div>
+.brand .dot {
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, #4dd0e1, #a78bfa);
+  border-radius: 50%;
+}
 
-      <div class="other-card">
-        <h3>Other 3</h3>
-        <div class="other-images">
-          <img src="other3-img1.jpg" alt="Other 3 image 1" />
-          <img src="other3-img2.jpg" alt="Other 3 image 2" />
-        </div>
-        <p>Description of the third other item.</p>
-      </div>
+.menu a {
+  color: #e8e9ee;
+  margin-left: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.menu a:hover {
+  color: #4dd0e1;
+}
 
-      <div class="other-card">
-        <h3>Other 4</h3>
-        <div class="other-images">
-          <img src="other4-img1.jpg" alt="Other 4 image 1" />
-          <img src="other4-img2.jpg" alt="Other 4 image 2" />
-        </div>
-        <p>Description of the fourth other item.</p>
-      </div>
-    </div>
-  </section>
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #4dd0e1;
+  color: #4dd0e1;
+  transition: all 0.2s ease-in-out;
+}
 
-  <footer>
-    <p>&copy; 2025 Maya Kundakci. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+.btn:hover {
+  background: #4dd0e1;
+  color: #0b0c0f;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #4dd0e1, #a78bfa);
+  border: none;
+  color: #0b0c0f;
+}
+.btn.primary:hover {
+  opacity: 0.9;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 40px 5%;
+  background: #12141a;
+  border-top: 1px solid #232634;
+  color: #9aa0aa;
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  main {
+    padding: 60px 8%;
+  }
+}
