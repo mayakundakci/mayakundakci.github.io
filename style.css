@@ -1,61 +1,145 @@
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: #0b0c0f;
+  color: #e8e9ee;
   line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-header {
-  background: #222;
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
-}
-
-nav {
-  background: #444;
-  color: #fff;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  color: #fff;
+a {
+  color: #4dd0e1;
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #a78bfa;
+}
+a:visited {
+  color: #4dd0e1; /* prevent purple visited color */
 }
 
+/* ---------- Layout ---------- */
 main {
-  padding: 2rem;
+  padding: 80px 5%;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  flex: 1;
 }
 
-section {
-  margin-bottom: 3rem;
+h1, h2, h3 {
+  color: #ffffff;
+  margin-top: 0;
+}
+p {
+  color: #cfd2dc;
 }
 
-.project-list li {
-  background: #fff;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-left: 4px solid #0077cc;
+ul {
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 8px;
 }
 
-footer {
-  background: #222;
-  color: #ccc;
+/* ---------- Navbar ---------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: #12141a;
+  border-bottom: 1px solid #232634;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand .dot {
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, #4dd0e1, #a78bfa);
+  border-radius: 50%;
+}
+
+.menu a {
+  color: #e8e9ee;
+  margin-left: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.menu a:hover {
+  color: #4dd0e1;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 600;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  cursor: pointer;
+  border: 1px solid #4dd0e1;
+  color: #4dd0e1;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background: #4dd0e1;
+  color: #0b0c0f;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #4dd0e1, #a78bfa);
+  border: none;
+  color: #0b0c0f;
+}
+.btn.primary:hover {
+  opacity: 0.9;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 40px 5%;
+  background: #12141a;
+  border-top: 1px solid #232634;
+  color: #9aa0aa;
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  main {
+    padding: 60px 8%;
+  }
 }
