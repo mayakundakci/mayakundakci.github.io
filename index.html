@@ -1,136 +1,46 @@
-/* ---------- Base ---------- */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maya Kundakci — Portfolio</title>
+  <meta name="description" content="Portfolio and resume of Maya Kundakci — robotics, controls, perception, and mechatronics projects." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🤖</text></svg>">
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #0b0c0f; color: #e8e9ee; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #12141a; }
+    .brand { font-weight: bold; font-size: 1.2rem; display: flex; align-items: center; gap: 8px; }
+    .brand .dot { width: 8px; height: 8px; background: linear-gradient(135deg,#4dd0e1,#a78bfa); border-radius: 50%; }
+    .menu a { color: #e8e9ee; margin-left: 16px; text-decoration: none; }
+    .menu a:hover { text-decoration: underline; }
+    footer { text-align: center; padding: 40px; background: #12141a; color: #9aa0aa; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand"><span class="dot"></span>Maya Kundakci</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="professional.html">Professional</a>
+      <a href="projects.html">Projects</a>
+      <a href="competitions.html">Competitions</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  background: #0b0c0f;
-  color: #e8e9ee;
-  line-height: 1.6;
-}
+  <main style="padding:80px 5%; max-width:900px; margin:auto;">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I’m Maya Kundakci — a Mechanical Engineering and Robotics student at Carnegie Mellon University. This site showcases my work, projects, and interests in robotics and engineering. Use the navigation bar above to explore different sections.</p>
+  </main>
 
-a {
-  color: #4dd0e1;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
+  <footer>
+    <p>© <span id="year"></span> Maya Kundakci</p>
+  </footer>
 
-/* ---------- Layout ---------- */
-main {
-  padding: 80px 5%;
-  max-width: 900px;
-  margin: auto;
-}
-
-h1, h2, h3 {
-  color: #ffffff;
-  margin-top: 0;
-}
-p {
-  color: #cfd2dc;
-}
-
-ul {
-  padding-left: 20px;
-}
-li {
-  margin-bottom: 8px;
-}
-
-/* ---------- Navbar ---------- */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 5%;
-  background: #12141a;
-  border-bottom: 1px solid #232634;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.brand {
-  font-weight: bold;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.brand .dot {
-  width: 8px;
-  height: 8px;
-  background: linear-gradient(135deg, #4dd0e1, #a78bfa);
-  border-radius: 50%;
-}
-
-.menu a {
-  color: #e8e9ee;
-  margin-left: 16px;
-  text-decoration: none;
-  font-weight: 500;
-}
-.menu a:hover {
-  color: #4dd0e1;
-}
-
-/* ---------- Buttons ---------- */
-.btn {
-  display: inline-block;
-  padding: 10px 16px;
-  border-radius: 999px;
-  font-weight: 600;
-  text-align: center;
-  cursor: pointer;
-  border: 1px solid #4dd0e1;
-  color: #4dd0e1;
-  transition: all 0.2s ease-in-out;
-}
-
-.btn:hover {
-  background: #4dd0e1;
-  color: #0b0c0f;
-}
-
-.btn.primary {
-  background: linear-gradient(135deg, #4dd0e1, #a78bfa);
-  border: none;
-  color: #0b0c0f;
-}
-.btn.primary:hover {
-  opacity: 0.9;
-}
-
-/* ---------- Footer ---------- */
-footer {
-  text-align: center;
-  padding: 40px 5%;
-  background: #12141a;
-  border-top: 1px solid #232634;
-  color: #9aa0aa;
-  font-size: 0.9rem;
-}
-
-/* ---------- Responsive ---------- */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 12px;
-  }
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-  }
-  main {
-    padding: 60px 8%;
-  }
-}
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
