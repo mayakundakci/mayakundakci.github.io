@@ -4,39 +4,70 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Maya Kundakci — Portfolio</title>
-  <meta name="description" content="Portfolio and resume of Maya Kundakci — robotics, controls, perception, and mechatronics projects." />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🤖</text></svg>">
+  <meta name="description" content="Portfolio of Maya Kundakci — Mechanical Engineering and Robotics student at Carnegie Mellon University.">
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <!-- Navigation -->
   <nav>
     <div class="brand"><span class="dot"></span>Maya Kundakci</div>
     <div class="menu">
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="professional.html">Professional</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </div>
   </nav>
 
-  <main>
-    <h1>Welcome to My Portfolio</h1>
-    <p>
-      Hi, I’m <strong>Maya Kundakci</strong> — a Mechanical Engineering and Robotics student at Carnegie Mellon University.
-      This site showcases my work, projects, and interests in robotics and engineering.
-      Use the navigation bar above to explore different sections.
-    </p>
-    <a class="btn primary" href="projects.html">See My Work</a>
-  </main>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hi, I’m Maya Kundakci 👋</h1>
+      <p class="subtitle">Mechanical Engineering + Robotics @ Carnegie Mellon University</p>
+      <p>I design and build autonomous robotic systems — combining mechatronic design, sensing, and control to bring intelligence to machines.</p>
+      <div class="hero-buttons">
+        <a href="projects.html" class="btn primary">View Projects</a>
+        <a href="assets/Maya_Kundakci_Resume.pdf" class="btn" target="_blank">Résumé</a>
+      </div>
+    </div>
+  </header>
 
+  <!-- About Me -->
+  <section id="about">
+    <div class="container narrow">
+      <h2>About Me</h2>
+      <p>I’m a senior at Carnegie Mellon University majoring in Mechanical Engineering with a minor in Robotics (expected May 2026). My work bridges design, controls, and autonomy — I’m especially interested in how hardware and algorithms integrate in real-world robotic systems.</p>
+      <p><strong>Relevant Coursework:</strong> Robot Kinematics and Dynamics, Intelligent Robot Systems, Mobile Robot Algorithms, Feedback Control Systems, Dynamic Systems and Controls, Mechanical Design I–III, and Electronics for Sensing and Actuation.</p>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container narrow">
+      <h2>Experience</h2>
+
+      <div class="exp-item">
+        <img src="assets/hitachi.svg" alt="Hitachi Rail Logo" class="exp-logo" />
+        <h3>RAMS Intern — Hitachi Rail</h3>
+        <span class="time">Summer 2025 • Pittsburgh, PA</span>
+        <p>Developed a SQL + React database tool for FMECA/SHA automation. Conducted system reliability analyses and explored AI-driven generation of safety documentation.</p>
+      </div>
+
+      <div class="exp-item">
+        <img src="assets/borusan.png" alt="Borusan Automotive Logo" class="exp-logo" />
+        <h3>Mechanic / Technician — BMW Turkey (Borusan Automotive)</h3>
+        <span class="time">Summer 2023 • Istanbul, Turkey</span>
+        <p>Performed mechanical diagnostics, assembly, and maintenance on BMW vehicles. Gained hands-on experience in precision mechanical systems and workshop operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>© <span id="year"></span> Maya Kundakci</p>
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>

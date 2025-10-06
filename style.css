@@ -143,3 +143,23 @@ footer {
     padding: 60px 8%;
   }
 }
+
+/* ---------- Experience Logos ---------- */
+.exp-logo {
+  width: 160px;
+  height: auto;
+  display: block;
+  margin-bottom: 12px;
+  filter: brightness(0.95) contrast(1.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.exp-logo:hover {
+  transform: scale(1.03);
+}
+
+/* Optional tweak specifically for SVGs on dark background */
+.exp-logo[src$=".svg"] {
+  filter: brightness(1.2) contrast(1.2);
+}
